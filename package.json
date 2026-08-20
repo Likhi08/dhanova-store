@@ -1,0 +1,21 @@
+{
+  "name": "dhanova-store",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/run-apps.mjs dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "start": "node scripts/run-apps.mjs start",
+    "start:frontend": "npm --prefix frontend run start",
+    "start:backend": "npm --prefix backend run start",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "verify": "npm --prefix backend run build && npm --prefix frontend run build && npm --prefix backend audit --omit=dev && npm --prefix frontend audit --omit=dev",
+    "import:staples-home-decor": "npm --prefix backend run import:staples-home-decor",
+    "import:baby-products": "npm --prefix backend run import:baby-products",
+    "sync-images:amul": "npm --prefix backend run sync-images:amul",
+    "sync-images:related": "npm --prefix backend run sync-images:related",
+    "sync-images:bigbasket": "npm --prefix backend run sync-images:bigbasket",
+    "sync-images:cadbury-cococart": "npm --prefix backend run sync-images:cadbury-cococart"
+  }
+}
